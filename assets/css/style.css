@@ -364,6 +364,14 @@
     margin-right: auto;
 }
 
+.container_partner {
+    max-width: 1000px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* =======================normal css================================= */
 .nav_border {
@@ -371,6 +379,28 @@
     box-shadow: 0px 0px 11.6px 4px #FFFFFF0D;
     background: #FFFFFF0A;
     border-radius: 107px;
+}
+
+.company_card {
+    min-height: 80px;
+    max-width: 220px;
+    background: rgba(94, 94, 94, 0.15);
+    border: 1px solid;
+    position: relative;
+    border-radius: 6px;
+}
+
+
+.max-w-281 {
+    max-width: 281px;
+}
+
+.token_card {
+    position: relative;
+    border-radius: 16px;
+    border: none;
+    padding: 20px;
+    max-width: 558px;
 }
 
 .timeline_boxes {
@@ -558,6 +588,19 @@ hr {
     mask-composite: exclude;
 }
 
+.company_card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    background: linear-gradient(92.76deg, rgba(241, 22, 64, 0.35) 0.29%, rgba(74, 18, 204, 0.35) 64.44%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
 .how-it-works.row .col-2::after {
     content: "";
     position: absolute;
@@ -605,13 +648,7 @@ hr {
 }
 
 
-.token_card {
-    position: relative;
-    border-radius: 16px;
-    border: none;
-    padding: 45px 43px 44px 43px;
-    max-width: 558px;
-}
+
 
 .token_card::before {
     content: "";
@@ -627,9 +664,7 @@ hr {
     mask-composite: exclude;
 }
 
-.max-w-281 {
-    max-width: 281px;
-}
+
 
 /*=================== media screen=================== */
 @media (max-width:992px) {
@@ -702,6 +737,7 @@ hr {
         width: 50px !important;
         height: 50px !important;
     }
+
 }
 
 @media (max-width:576px) {
@@ -730,6 +766,10 @@ hr {
 @media (max-width:768px) {
     .full {
         transform: translate(7px, 10px);
+    }
+
+    .company_card {
+        max-width: 100%;
     }
 }
 
@@ -778,6 +818,10 @@ hr {
     .pb-sm-70 {
         padding-bottom: 70px;
     }
+
+    .token_card {
+        padding: 30px;
+    }
 }
 
 @media (min-width:992px) {
@@ -817,4 +861,18 @@ hr {
         min-height: 100vh;
     }
 
+    .token_card {
+        padding: 45px 43px 44px 43px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .fs-md-20 {
+        font-size: var(--fs-20);
+    }
+
+    .fs-md-24 {
+        font-size: var(--fs-24);
+    }
 }

@@ -26,6 +26,7 @@
     --black-color: #000000;
     --white-color: #ffff;
     --img-bg-color: linear-gradient(146.79deg, #F4EAD8 0%, #E0B764 97.77%);
+    --body-color: #040410;
 
     --fs-10: 10px;
     --fs-14: 14px;
@@ -350,6 +351,10 @@
     cursor: pointer;
 }
 
+.body_color {
+    background-color: var(--body-color);
+}
+
 /* ==============================containers============================= */
 .container_hero {
     max-width: 1140px;
@@ -368,28 +373,123 @@
     border-radius: 107px;
 }
 
+.timeline_boxes {
+    position: relative;
+}
+
+.timeline_boxes {
+    max-width: 578px;
+    background: linear-gradient(0deg, #000000, #000000),
+        linear-gradient(180deg, rgba(37, 37, 203, 0) 0%, rgba(37, 37, 203, 0.24) 100%);
+    padding: 24px;
+}
+
+
+
+.image_wh_box {
+    width: 160px;
+    height: 160px;
+    background: #FFFFFF1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 96.63px;
+}
+
+.circle {
+    font-weight: bold;
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color: #ED8D8D;
+    color: #4D4545;
+    max-height: 50px;
+    z-index: 2;
+    display: none;
+}
+
+.how-it-works.row {
+    display: flex;
+}
+
+.how-it-works.row .col-2 {
+    display: inline-flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.timeline div {
+    padding: 0;
+    height: 88px;
+}
+
+hr {
+    opacity: 1 !important;
+}
+
+.wh_changes_timeline_img {
+    width: 100px;
+    height: 100px;
+}
+
+.timeline hr {
+    border-top: 3px dashed #fff;
+    margin: 0;
+    top: 41px;
+    position: relative;
+}
+
+.timeline .col-2 {
+    display: flex;
+    overflow: hidden;
+}
+
+.timeline .corner {
+    border: 3px dashed #fff;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.timeline .top-right {
+    left: 50%;
+    top: -50%;
+}
+
+.timeline .left-bottom {
+    left: -50%;
+    top: calc(50% - 3px);
+}
+
+.timeline .top-left {
+    left: -50%;
+    top: -50%;
+}
+
+.timeline .right-bottom {
+    left: 50%;
+    top: calc(50% - 3px);
+}
+
+
+
+.roadmap_line {
+    position: relative;
+}
+
+.max-w-602 {
+    max-width: 602px;
+}
+
 .bttn {
     position: relative;
     padding: 16px 32px 16px 32px;
     border-radius: 55px;
     background-color: rgba(241, 22, 64, 1);
     border: none;
-}
-
-.bttn::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 55px;
-    padding: 3px;
-    background: linear-gradient(0deg, #DA0C1D, #DA0C1D),
-        linear-gradient(0deg, #DA0C1D, #DA0C1D);
-    ;
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
 }
 
 .nav_links {
@@ -424,6 +524,9 @@
 
 /*================================= spacing =========================*/
 
+.pt_60 {
+    padding-top: 60px;
+}
 
 .mt_40 {
     margin-top: 40px;
@@ -432,6 +535,69 @@
 /*========================== hover effect ======================*/
 .nav_links:hover {
     opacity: 1 !important;
+}
+
+/*===================== after before ==========================*/
+.bttn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 55px;
+    padding: 3px;
+    background: linear-gradient(0deg, #DA0C1D, #DA0C1D),
+        linear-gradient(0deg, #DA0C1D, #DA0C1D);
+    ;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.how-it-works.row .col-2::after {
+    content: "";
+    position: absolute;
+    border-left: 3px solid #ED8D8D;
+    z-index: 1;
+}
+
+.how-it-works.row .col-2.bottom::after,
+.how-it-works.row .col-2.top::after {
+    display: none;
+}
+
+.how-it-works.row .col-2.bottom::after {
+    height: 50%;
+    left: 50%;
+    top: 50%;
+}
+
+.how-it-works.row .col-2.full::after {
+    height: 100%;
+    left: calc(50% - 3px);
+    display: none;
+}
+
+.timeline_boxes::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 24px;
+    padding: 3px;
+    background: linear-gradient(0deg, #212181, #212181),
+        linear-gradient(92.76deg, rgba(241, 22, 64, 0.5) 0.29%, rgba(74, 18, 204, 0.5) 64.44%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.how-it-works.row .col-2.top::after {
+    height: 50%;
+    left: 50%;
+    top: 0;
 }
 
 /*=================== media screen=================== */
@@ -475,7 +641,36 @@
         left: 0;
     }
 
+    .timeline hr,
+    .corner {
+        display: none;
+    }
 
+    .full {
+        position: absolute;
+        left: 0;
+        transform: translate(30px, 10px);
+        z-index: 4;
+    }
+
+    .roadmap_line::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        border: 3px dashed var(--white-color);
+        left: 12%;
+        top: 0;
+    }
+
+    .image_wh_box {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .wh_changes_timeline_img {
+        width: 50px !important;
+        height: 50px !important;
+    }
 }
 
 @media (max-width:576px) {
@@ -486,8 +681,26 @@
     .w-sm-100 {
         width: 100%;
     }
+
+    .image_wh_box {
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .full {
+        transform: translate(-10px, 10px) !important;
+    }
+
+    .roadmap_line::after {
+        left: 0 !important;
+    }
 }
 
+@media (max-width:768px) {
+    .full {
+        transform: translate(7px, 10px);
+    }
+}
 
 
 @media (min-width:576px) {
@@ -518,11 +731,19 @@
     .min-lg-h-503 {
         min-height: 503px;
     }
+
+    .pt_sm_50 {
+        padding-top: 50px;
+    }
 }
 
 @media (min-width:992px) {
     .fs-lg-80 {
         font-size: var(--fs-80);
+    }
+
+    .pt_lg_98 {
+        padding-top: 98px;
     }
 
     .lh-lg-86 {
@@ -545,3 +766,7 @@
         padding-bottom: 81px;
     }
 }
+
+
+
+/*======================= timeline code ==================*/

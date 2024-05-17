@@ -77,6 +77,7 @@
     --lh-54: 54px;
     --lh-56: 56px;
     --lh-61: 61px;
+    --lh-64: 64px;
     --lh-68: 68px;
     --lh-72: 72px;
     --lh-75: 75px;
@@ -190,6 +191,10 @@
 
 .lh-27 {
     line-height: var(--lh-27);
+}
+
+.lh-64 {
+    line-height: var(--lh-64);
 }
 
 .lh-28 {
@@ -410,6 +415,19 @@
     background-size: cover;
 }
 
+.coin_sec_bg_img {
+    background-image: url("../img/png/coin_sec_bg_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*================================= spacing =========================*/
+
+
+.mt_40 {
+    margin-top: 40px;
+}
 
 /*========================== hover effect ======================*/
 .nav_links:hover {
@@ -464,7 +482,12 @@
     .flex-sm-wrap {
         flex-wrap: wrap;
     }
+
+    .w-sm-100 {
+        width: 100%;
+    }
 }
+
 
 
 @media (min-width:576px) {
@@ -475,6 +498,26 @@
     .lh-sm-72 {
         line-height: var(--lh-72);
     }
+
+    .fs-sm-40 {
+        font-size: var(--fs-40);
+    }
+
+    .lh-sm-54 {
+        line-height: var(--lh-54);
+    }
+
+    .pt_sm_80 {
+        padding-top: 80px;
+    }
+
+    .max-w-100 {
+        max-width: 100%;
+    }
+
+    .min-lg-h-503 {
+        min-height: 503px;
+    }
 }
 
 @media (min-width:992px) {
@@ -484,5 +527,21 @@
 
     .lh-lg-86 {
         line-height: var(--lh-86);
+    }
+
+    .lh-lg-64 {
+        line-height: var(--lh-64);
+    }
+
+    .fs-lg-52 {
+        font-size: var(--fs-52);
+    }
+
+    .pt_lg_131 {
+        padding-top: 181px;
+    }
+
+    .pb_lg_81 {
+        padding-bottom: 81px;
     }
 }

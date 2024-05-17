@@ -552,6 +552,13 @@ hr {
     background-size: cover;
 }
 
+.staking_bg_img {
+    background-image: url("../img/png/staking_sec_bg_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 /*================================= spacing =========================*/
 
 .pt_60 {
@@ -822,6 +829,14 @@ hr {
     .token_card {
         padding: 30px;
     }
+
+    .pt_sm_100 {
+        padding-top: 100px;
+    }
+
+    .pb_sm_100 {
+        padding-bottom: 100px;
+    }
 }
 
 @media (min-width:992px) {
@@ -863,6 +878,14 @@ hr {
 
     .token_card {
         padding: 45px 43px 44px 43px;
+    }
+
+    .pt_lg_175 {
+        padding-top: 175px;
+    }
+
+    .pb_lg_175 {
+        padding-bottom: 175px;
     }
 
 }

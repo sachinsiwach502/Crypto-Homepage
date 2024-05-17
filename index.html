@@ -12,29 +12,31 @@
 </head>
 
 <body>
-    <header class="header_bg_img  ">
+    <header class="header_bg_img  min-vh-100 d-flex flex-column">
         <nav>
             <div class="container_hero pt-3 pb-3 pe-3 nav_border mt-4">
-                <div class="d-flex align-items-center justify-content-sm-between justify-content-end">
-                    <div class="curser d-sm-block d-none">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="curser ">
                         <img src="./assets/img/png/nav_logo.png" alt="nav-icon">
                     </div>
-                    <div class="d-flex align-items-center gap-41 menu-links menuBar">
+                    <div class="d-flex align-items-center gap-4 menu-links menuBar">
                         <div class="curser d-sm-none d-flex">
                             <img src="./assets/img/png/nav_icon.png" alt="nav-icon">
                         </div>
-                        <a href="#home" class="ff-hl text-white  fs-18 fw-4  lh-20  nav_links  home">How
+                        <a href="#home" class="ff-hl text-white  fs-18 fw-4  lh-20  nav_links opacity-75  home">How
                             it
                             works</a>
-                        <a href="#about" class="ff-r text-white  fs-16 fw-4  lh-20 nav_links  about">Benefits</a>
-                        <a href="#help" class="ff-r text-white  fs-16 fw-4  lh-20 nav_links  help">RecentWork</a>
-                        <a href="#testimonials" class="ff-r text-white  fs-16 fw-4  lh-20 nav_links ">Pricing</a>
-                        <a href="#testimonials" class="ff-r text-white  fs-16 fw-4  lh-20 nav_links ">FAQs</a>
-                        <button class="bttn shadow d-md-none d-flex rounded-3  fs-18 fw-7 lh-3 ff-r">Login</button>
+                        <a href="#about" class="ff-r text-white  fs-16 fw-4  lh-20 nav_links opacity-75 ">Benefits</a>
+                        <a href="#help" class="ff-r text-white  fs-16 fw-4  lh-20 nav_links opacity-75">RecentWork</a>
+                        <a href="#testimonials"
+                            class="ff-r text-white  fs-16 fw-4  lh-20 nav_links opacity-75">Pricing</a>
+                        <a href="#testimonials" class="ff-r text-white  fs-16 fw-4  lh-20 nav_links opacity-75">FAQs</a>
+                        <button class="bttn d-md-none d-flex   fs-16 fw-7 lh-3 ff-r text-white">Launch
+                            dApp</button>
                     </div>
                     <div class="d-flex align-items-center gap-4">
-                        <button
-                            class="bttn shadow d-md-flex d-none rounded-3 xxl-fs-28 lh-20 fs-18 fw-7 xxl-lh-32 ff-r">Login</button>
+                        <button class="bttn d-md-flex d-none  fs-16 lh-24  fw-7 ff-r text-white">Launch
+                            dApp</button>
 
                         <div class="menuIcon">
                             <span class="first-line"></span>
@@ -46,15 +48,38 @@
             </div>
         </nav>
 
-
+        <!--================== hero section =============================-->
+        <section class="flex-grow-1 d-flex align-items-center justify-content-center">
+            <div class="container_hero d-flex justify-content-center flex-column align-items-center">
+                <h1 class="ff-r text-white text-center fs-lg-80 lh-lg-86 fs-sm-52 lh-sm-72 fs-40 lh-56 fw-7 mb-0">
+                    Redefining Raffles with Crypto Rewards!
+                </h1>
+                <p class="text-center mb-0 pt-3 text-white opacity-75 fs-16 lh-24 max-w-580 ff-r">It is a long
+                    established
+                    fact that a
+                    reader will be distracted by the readable content of a page when looking at its
+                    layout.
+                </p>
+                <div class="d-flex align-items-center justify-content-center mt-4 gap-4 flex-sm-wrap">
+                    <button class="bttn  fs-16 lh-24  fw-7 ff-r text-white">Get Started</button>
+                    <div class="d-flex align-items-center justify-content-center gap-3">
+                        <span class="play_icon d-flex align-items-center justify-content-center curser">
+                            <img src="./assets/img/svg/play_icon.svg" alt="play icon">
+                        </span>
+                        <p class="mb-0 fw-7 fs-16 lh-24 ff-r text-white">Learn More</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </header>
     <main></main>
     <footer></footer>
-    <script src="./assets/js/app.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

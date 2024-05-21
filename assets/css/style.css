@@ -912,6 +912,10 @@ hr {
     .w-300px {
         width: 300px;
     }
+
+    .flex-sm-wrap {
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width:768px) {
@@ -1055,7 +1059,3 @@ hr {
         font-size: var(--fs-24);
     }
 }
-
-/* * {
-    outline: 1px solid red;
-} */

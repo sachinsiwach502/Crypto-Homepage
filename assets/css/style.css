@@ -364,6 +364,14 @@
     margin-right: auto;
 }
 
+.in_sec_container {
+    max-width: 1058px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .container_partner {
     max-width: 1000px;
     padding-left: 12px;
@@ -379,6 +387,24 @@
     box-shadow: 0px 0px 11.6px 4px #FFFFFF0D;
     background: #FFFFFF0A;
     border-radius: 107px;
+}
+
+.max-w-321 {
+    max-width: 321px;
+}
+
+.footer_underline {
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 1);
+    height: 1px;
+    opacity: 20%;
+}
+
+.media_app {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0.78px solid rgba(255, 255, 255, 1);
 }
 
 .company_card {
@@ -414,7 +440,9 @@
     padding: 24px;
 }
 
-
+.media_app {
+    transition: all 300ms linear;
+}
 
 .image_wh_box {
     width: 160px;
@@ -424,6 +452,10 @@
     align-items: center;
     justify-content: center;
     border-radius: 96.63px;
+}
+
+.max-w-273 {
+    max-width: 273px;
 }
 
 .circle {
@@ -448,7 +480,28 @@
     justify-content: center;
 }
 
+.in_sec_border {
+    box-shadow: 0px 2px 34.3px 4px rgba(24, 83, 152, 0.28);
+    background: linear-gradient(180deg, rgba(241, 22, 64, 0.24) 0%, rgba(33, 33, 129, 0.19) 64.12%, rgba(33, 33, 129, 0.18) 100%);
+    border: none;
+    position: relative;
+    border-radius: 25px;
+}
 
+
+.in_sec_border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 25px;
+    padding: 4px;
+    background: linear-gradient(92.76deg, rgba(241, 22, 64, 0.5) 0.29%, rgba(74, 18, 204, 0.5) 64.44%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
 
 
 .timeline div {
@@ -522,6 +575,14 @@ hr {
     border: none;
 }
 
+.bttn_2 {
+    position: relative;
+    padding: 16px 32px 16px 32px;
+    border-radius: 55px;
+    border: 3px solid rgba(218, 12, 29, 1);
+    background-color: transparent;
+}
+
 .nav_links {
     transition: all 200ms linear;
 }
@@ -559,6 +620,15 @@ hr {
     background-size: cover;
 }
 
+.in_sec_bg_img {
+    background-image: url("../img/png/in_second_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
 /*================================= spacing =========================*/
 
 .pt_60 {
@@ -573,10 +643,16 @@ hr {
     padding-bottom: 35px;
 }
 
+
+
 /*========================== hover effect ======================*/
 .nav_links:hover {
     opacity: 1 !important;
 }
+
+/* .media_app:hover {
+    background: ;
+} */
 
 /*===================== after before ==========================*/
 .bttn::before {
@@ -745,6 +821,12 @@ hr {
         height: 50px !important;
     }
 
+    .opacity-lg-50 {
+        opacity: 50%;
+    }
+
+
+
 }
 
 @media (max-width:576px) {
@@ -799,7 +881,7 @@ hr {
     }
 
     .pt_sm_80 {
-        padding-top: 80px;
+        padding-top: 80px !important;
     }
 
     .max-w-100 {
@@ -811,7 +893,7 @@ hr {
     }
 
     .pt_sm_50 {
-        padding-top: 50px;
+        padding-top: 50px !important;
     }
 
     .pt_sm_70 {
@@ -819,11 +901,11 @@ hr {
     }
 
     .pt-sm-100 {
-        padding-top: 100px;
+        padding-top: 100px !important;
     }
 
     .pb-sm-70 {
-        padding-bottom: 70px;
+        padding-bottom: 70px !important;
     }
 
     .token_card {
@@ -831,11 +913,15 @@ hr {
     }
 
     .pt_sm_100 {
-        padding-top: 100px;
+        padding-top: 100px !important;
     }
 
     .pb_sm_100 {
-        padding-bottom: 100px;
+        padding-bottom: 100px !important;
+    }
+
+    .pt_sm_40 {
+        padding-top: 40px !important;
     }
 }
 
@@ -844,8 +930,12 @@ hr {
         font-size: var(--fs-80);
     }
 
+    .pb_lg_140 {
+        padding-bottom: 140px;
+    }
+
     .pt_lg_98 {
-        padding-top: 98px;
+        padding-top: 98px !important;
     }
 
     .lh-lg-86 {
@@ -861,11 +951,11 @@ hr {
     }
 
     .pt_lg_131 {
-        padding-top: 181px;
+        padding-top: 181px !important;
     }
 
     .pb_lg_81 {
-        padding-bottom: 81px;
+        padding-bottom: 81px !important;
     }
 
     .pt_lg_120 {
@@ -881,11 +971,15 @@ hr {
     }
 
     .pt_lg_175 {
-        padding-top: 175px;
+        padding-top: 175px !important;
     }
 
     .pb_lg_175 {
-        padding-bottom: 175px;
+        padding-bottom: 175px !important;
+    }
+
+    .pt_lg_60 {
+        padding-top: 60px !important;
     }
 
 }

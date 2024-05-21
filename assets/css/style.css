@@ -389,6 +389,8 @@
     border-radius: 107px;
 }
 
+
+
 .max-w-321 {
     max-width: 321px;
 }
@@ -850,6 +852,10 @@ hr {
     .roadmap_line::after {
         left: 0 !important;
     }
+
+    .w-300px {
+    width: 300px;
+    }
 }
 
 @media (max-width:768px) {
@@ -993,3 +999,7 @@ hr {
         font-size: var(--fs-24);
     }
 }
+
+/* * {
+    outline: 1px solid red;
+} */
